@@ -23,7 +23,7 @@ public class Person implements Node, Comparable<Person> {
     public void setEmployment(Company company, String position) {
         this.employment = new Employment(company, position);
         this.position = position;
-        company.addEmployee(this);
+        company.addEmployee(this, position);
     }
 
 

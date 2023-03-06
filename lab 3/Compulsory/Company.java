@@ -18,10 +18,10 @@ public class Company implements Node, Comparable<Company> {
         return name;
     }
 
-    public void addEmployee(Person person) {
+    public void addEmployee(Person person, String position) {
         if (!employees.contains(person)) {
             employees.add(person);
-            person.setEmployment(this, null);
+            person.setEmployment(this, position);
         }
     }
 

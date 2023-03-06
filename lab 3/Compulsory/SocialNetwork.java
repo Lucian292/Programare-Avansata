@@ -11,9 +11,9 @@ public class SocialNetwork {
         ana.addFriend(ion);    // Ana este prietena cu Ion
         ion.addFriend(ana);
         ana.setEmployment(amazon, "Programator");    // Ana lucreaza la Amazon ca Programator
-        amazon.addEmployee(ana);
+        amazon.addEmployee(ana, "Programator");
         ion.setEmployment(bitdefender, "Designer");   // Ion lucreaza la Bitdefender ca Designer
-        bitdefender.addEmployee(ion);
+        bitdefender.addEmployee(ion, "Designer");
 
         nodes.add(ana);
         nodes.add(ion);
