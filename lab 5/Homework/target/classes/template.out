@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>${catalog.getName()} Report</title>
+</head>
+<body>
+    <h1>${catalog.getName()} Report</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <#list documents as doc>
+            <tr>
+                <td>${doc.getTitle()}</td>
+                <td>${doc.getLocation()}</td>
+            </tr>
+            </#list>
+        </tbody>
+    </table>
+</body>
+</html>
