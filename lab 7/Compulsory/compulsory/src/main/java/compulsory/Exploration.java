@@ -6,8 +6,8 @@ import java.util.List;
 public class Exploration {
 
 
-    private static final SharedMemory mem = new SharedMemory(20);
-    private static final ExplorationMap map = new ExplorationMap(20, mem);
+    private static final SharedMemory mem = new SharedMemory(2);
+    private static final ExplorationMap map = new ExplorationMap(2, mem);
     private final List<Robot> robots = new ArrayList<>();
     private volatile boolean allCellsVisited = false;
 

@@ -2,10 +2,15 @@ package org.example.objects;
 
 import org.example.objects.MainFrame;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 
 import static org.example.objects.MainFrame.canvas;
 
@@ -40,13 +45,10 @@ public class ControlPanel extends JPanel {
                 System.out.println("Loaded game state from file: " + selectedFile.getAbsolutePath());
             }
         });
-        saveBtn.addActionListener(e -> {
-            JFileChooser fileChooser = new JFileChooser();
-            int returnValue = fileChooser.showSaveDialog(frame);
-            if (returnValue == JFileChooser.APPROVE_OPTION) {
-                File selectedFile = fileChooser.getSelectedFile();
-                // TODO: Save the current game state to the selected file
-                System.out.println("Saved game state to file: " + selectedFile.getAbsolutePath());
+        saveBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                saveImage();
             }
         });
         resetBtn.addActionListener(e -> {
@@ -65,5 +67,34 @@ public class ControlPanel extends JPanel {
 
     private void exitGame(ActionEvent e) {
         frame.dispose();
+    }
+
+    private void saveImage() {
+        try {
+            // Obțineți o referință la panoul care conține desenul
+            Component content = frame.getContentPane();
+
+            // Creează o imagine tampon pentru a desena panoul pe ea
+            BufferedImage image = new BufferedImage(content.getWidth(), content.getHeight(), BufferedImage.TYPE_INT_ARGB);
+            Graphics2D g2d = image.createGraphics();
+
+            // Desenați panoul pe imaginea tampon
+            content.paint(g2d);
+            g2d.dispose();
+
+            // Afișează un dialog de salvare a fișierului
+            JFileChooser fileChooser = new JFileChooser();
+            fileChooser.setDialogTitle("Save As");
+            fileChooser.setFileFilter(new FileNameExtensionFilter("PNG Images", "png"));
+
+            if (fileChooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION) {
+                // Salvează imaginea în fișierul selectat
+                File fileToSave = fileChooser.getSelectedFile();
+                ImageIO.write(image, "png", fileToSave);
+                // Salvați imaginea tampon în fișierul PNG
+            }
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 }
