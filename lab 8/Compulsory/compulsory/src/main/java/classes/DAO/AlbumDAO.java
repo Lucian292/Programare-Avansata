@@ -8,12 +8,14 @@ import java.util.List;
 
 public class AlbumDAO {
 
-    public void create(String name, int id) throws SQLException {
+    public void create(String name, int id_artist, int realease_year, String genre) throws SQLException {
         Connection con = Database.getConnection();
         try (PreparedStatement pstmt = con.prepareStatement(
-                "insert into albums (name, id_artist) values (?, ?)")) {
+                "insert into albums (name, id_artist, release_year, genre) values (?, ?, ?, ?)")) {
             pstmt.setString(1, name);
-            pstmt.setInt(2, id);
+            pstmt.setInt(2, id_artist);
+            pstmt.setInt(3, realease_year);
+            pstmt.setString(4, genre);
             pstmt.executeUpdate();
         }
     }
@@ -45,11 +47,28 @@ public class AlbumDAO {
             List<String> result = new ArrayList<String>();
             int index = 0;
 
-            while(rs.next()) {
-                result.add(rs.getString(1));
+            while (rs.next()) {
+                result.add("ID: " + rs.getInt("id") + ", Name: " + rs.getString("name") + ", Artist ID: " + rs.getInt("id_artist") + ", Release Year: " + rs.getInt("release_year") + ", Genre: " + rs.getString("genre"));
             }
 
             return result;
         }
     }
+
+    public List<String> findAll() throws SQLException {
+        Connection con = Database.getConnection();
+        try (Statement stmt = con.createStatement();
+             ResultSet rs = stmt.executeQuery(
+                     "SELECT artists.name AS artist_name, albums.name AS album_name, release_year, genre " +
+                             "FROM albums " +
+                             "JOIN artists ON albums.id_artist = artists.id " +
+                             "ORDER BY artist_name, album_name")) {
+            List<String> result = new ArrayList<String>();
+            while (rs.next()) {
+                result.add("Artist: " + rs.getString("artist_name") + ", Album: " + rs.getString("album_name") + ", Release Year: " + rs.getInt("release_year") + ", Genre: " + rs.getString("genre"));
+            }
+            return result;
+        }
+    }
+
 }

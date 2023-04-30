@@ -32,4 +32,6 @@ public class ArtistDAO {
                 return rs.next() ? rs.getString(1) : null;
         }
     }
+
+
 }
