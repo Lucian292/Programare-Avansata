@@ -45,7 +45,7 @@ public class Main {
             Database.getConnection().close();
         } catch (SQLException e) {
             System.err.println(e);
-            Database.rollback();
+            //Database.rollback();
             Database.closeConnection();
         }
 

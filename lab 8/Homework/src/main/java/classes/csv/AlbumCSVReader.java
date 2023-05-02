@@ -18,8 +18,8 @@ public class AlbumCSVReader {
     public static void main(String[] args) throws IOException, SQLException {
     try {
         //stergem toate inregistrarile din baza de date
-        Database.deleteAll("albums");
-        Database.deleteAll("artists");
+//        Database.deleteAll("albums");
+//        Database.deleteAll("artists");
 
         Reader reader = new FileReader("albumlist.csv");
         CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT.withFirstRecordAsHeader());
@@ -60,7 +60,7 @@ public class AlbumCSVReader {
 
     } catch (SQLException e) {
         System.err.println(e);
-        Database.rollback();
+        //Database.rollback();
         Database.closeConnection();
     }
     }
