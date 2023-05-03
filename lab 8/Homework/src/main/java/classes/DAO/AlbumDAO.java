@@ -17,6 +17,7 @@ public class AlbumDAO {
             pstmt.setInt(3, realease_year);
             pstmt.setString(4, genre);
             pstmt.executeUpdate();
+            con.commit();
         }
     }
 

@@ -12,7 +12,7 @@ public class Main {
         ArtistRepository artistRepository = new ArtistRepository(emf);
         Artist artist=new Artist("Luci");
         artistRepository.create(artist);
-        Artist test = artistRepository.findById(579L);
+        Artist test = artistRepository.findById(1575L);
         System.out.println(test);
 
         System.out.println(artistRepository.findByName("Lu"));
