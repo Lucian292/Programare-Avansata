@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0ac9b084-be69-4e23-a02a-b9a3c1d1e72d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../lab 1/Bonus/.idea/Bonus.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab 1/Bonus/bonus/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab 1/Bonus/bonus/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab 1/Bonus/bonus/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab 1/Bonus/bonus/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab 1/Bonus/bonus/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab 1/Bonus/bonus/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab 1/Bonus/bonus/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab 1/Bonus/bonus/src/main/java/org/example/Ex1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab 1/Bonus/bonus/src/main/java/org/example/Ex2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab 9/Homework9/src/main/java/org/example/abstractRepository/AbstractRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab 9/Homework9/src/main/java/org/example/abstractRepository/AlbumRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab 9/Homework9/src/main/java/org/example/abstractRepository/ArtistRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab 9/Homework9/src/main/java/org/example/abstractRepository/SongRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 9/Homework9/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 9/Homework9/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 9/Homework9/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 9/Homework9/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 9/Homework9/src/main/java/org/example/PersistenceUnitManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 9/Homework9/src/main/java/org/example/PersistenceUnitManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 9/Homework9/src/main/java/org/example/repository/AlbumRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 9/Homework9/src/main/java/org/example/repository/ArtistRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 9/Homework9/src/main/java/org/example/repository/SongRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 9/Homework9/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 9/Homework9/target/classes/org/example/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 9/Homework9/target/classes/org/example/PersistenceUnitManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab 9/Homework9/target/classes/org/example/PersistenceUnitManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 9/Homework9/target/classes/org/example/repository/AlbumRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 9/Homework9/target/classes/org/example/repository/ArtistRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab 9/Homework9/target/classes/org/example/repository/SongRepository.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2PY28jUYpBiWM6JIrvnQ3T23TJu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ac9b084-be69-4e23-a02a-b9a3c1d1e72d" name="Changes" comment="" />
+      <created>1683619540248</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683619540248</updated>
+    </task>
+    <servers />
+  </component>
+</project>
